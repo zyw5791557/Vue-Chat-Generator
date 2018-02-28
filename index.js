@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const http = require('http').Server(app);
-const io = require('socket.io')(http);
+const server = app.listen(3000);
+const io = require('socket.io')listen(server);
 const path = require('path');
 
 // node 解决 history路由问题
@@ -31,9 +31,6 @@ const UserContacts = mongoose.model('userContacts');
 
 
 
-http.listen(3000, function() {
-    console.log('app is running of port 3000');
-});
 
 var users = {};
 
