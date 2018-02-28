@@ -1,4 +1,4 @@
-# **EmliceChat**
+# **Vue-Chat-Generator**
 
 [![Build Status](https://travis-ci.org/yinxin630/fiora.svg?branch=master)](https://travis-ci.org/yinxin630/fiora)
 [![author](https://img.shields.io/badge/author-Emlice-blue.svg)](http://suisuijiang.com)
@@ -6,14 +6,13 @@
 
 语言: [简体中文](REMEAD.md)
 
-EmliceChat是一款web聊天应用. 使用node.js, express和jquery编写.
+Vue-Chat-Generator是一款web聊天应用. 使用 Node.js, Express 和 Vue 全家桶编写.
+> 该项目是EmliceChat的全方面重构项目(模板 | 技术栈 | 逻辑代码 | 优化)。
 
 ## 功能
 
 #### 未完成
 1. 消息撤回
-2. 私聊 typing 状态
-3. 当地天气状态
 4. 新建群聊 && 加入群聊
 5. 歌曲循环(单曲循环/顺序播放/随机播放)
 
@@ -29,13 +28,17 @@ EmliceChat是一款web聊天应用. 使用node.js, express和jquery编写.
 7. 消息类型自动解析
 8. 剪切板复制图片
 9. 反防盗链技术
+10. 游客登录
+11. 私聊 typing 状态
+12 联系人
+13. 当地天气状态
 
 ## 安装
 
 该项目依赖于node.js(>= 8.2.1)和mongodb数据库. 安装[node.js](https://npm.taobao.org/mirrors/node). 安装[mongodb](https://docs.mongodb.com/manual/installation/).
 
 0. 克隆项目到本地
-      `git clone git@https://github.com/zyw5791557/EmliceChat`
+      `git clone git@https://github.com/zyw5791557/Vue-Chat-Generator`
 1. 进行项目目录执行
   `yarn` 或者 `npm install
 2. 运行项目服务端
@@ -48,8 +51,8 @@ EmliceChat是一款web聊天应用. 使用node.js, express和jquery编写.
 
 ## 目录结构
 
-    |-- [public]                 // 前端项目 文件夹
-    |-- [servre]                  // 服务端代码
+    |-- [www]                 // 前端项目 文件夹
+    |-- [server]                  // 服务端代码
     |    |-- api.js               // api 接口
     |    |-- connect.js           // mongoDB 连接文件
     |    |-- model.js             // mongoDB 表模型
