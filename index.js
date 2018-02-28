@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const server = app.listen(3000);
-const io = require('socket.io')listen(server);
+const io = require('socket.io').listen(server);
 const path = require('path');
 
 // node 解决 history路由问题
